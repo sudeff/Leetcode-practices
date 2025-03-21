@@ -10,6 +10,8 @@ class Solution:
 solution = Solution()
 print(solution.twoSum([2,7,11,15],9))
 
+#time complexity is O(n^2) because the total number of iterations is n(n-1)/2; the dominant term there is n^2 
+
 
 
         
