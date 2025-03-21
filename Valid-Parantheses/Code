@@ -1,10 +1,14 @@
 
 class Solution:
-    def isValid(self, s: str):
-        n=len(s)
-        for i in range(0,n):
-            if s[i]==s[n-i-1]:
-                return True
-            
-solution=Solution()
-print(solution.isValid("()[]{}"))
+    def isValid(self, s: str) -> bool:
+        n = len(s)
+        if n % 2 == 1:  
+            return False
+        
+        for i in range(n // 2):  
+            if s[i] == s[n - 1 - i] :
+                return True  
+            else:
+                return False
+solution = Solution()
+print(solution.isValid("()[]{}")) 
