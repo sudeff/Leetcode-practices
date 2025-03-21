@@ -1,14 +1,20 @@
-
 class Solution:
     def isValid(self, s: str) -> bool:
-        n = len(s)
-        if n % 2 == 1:  
-            return False
-        
-        for i in range(n // 2):  
-            if s[i] == s[n - 1 - i] :
-                return True  
+        stack = []
+        mapping = {')': '(', '}': '{', ']': '['}  
+
+        for char in s:
+            if char in mapping:  
+                element_on_top = stack.pop() if stack else '#'  
+                if mapping[char] != top_element: 
+                    return False
             else:
-                return False
+                stack.append(char)  
+
+        return not stack  
+
+
 solution = Solution()
 print(solution.isValid("()[]{}")) 
+
+#burada şu oluyor; açılan her parantez stack'a ekleniyor ve eğer kapanma parantezi gelirse stack'tan çıkarılıyor, stack en son boş kalırsa true olmuş demektir
