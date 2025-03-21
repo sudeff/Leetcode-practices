@@ -6,7 +6,7 @@ class Solution:
         for char in s:
             if char in mapping:  
                 element_on_top = stack.pop() if stack else '#'  
-                if mapping[char] != top_element: 
+                if mapping[char] != element_on_top: 
                     return False
             else:
                 stack.append(char)  
