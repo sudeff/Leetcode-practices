@@ -1,4 +1,12 @@
 class Solution:
     def isPalindrome(self, x: int):
-        
+        x_string = str(x)
+        for i in range(len(x_string) // 2):  # Only need to check half
+            if x_string[i] != x_string[len(x_string) - 1 - i]:#because lenght is n-1, we are searching from 0 to (n-1)
+                return False
+        return True  # If all pairs match, it's a palindrome
+
+solution = Solution()
+print(solution.isPalindrome(1221))  
+print(solution.isPalindrome(1231))  
 
