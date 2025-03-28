@@ -10,3 +10,4 @@ solution = Solution()
 print(solution.isPalindrome(1221))  
 print(solution.isPalindrome(1231))  
 
+#the time complexity is O(n)
