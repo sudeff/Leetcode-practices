@@ -8,7 +8,7 @@ Approach :
 - Optimized Fibonacci: Since this is basically the nth Fibonacci number.
 
 Python Code:
-[Click here to see the solution](./code/solution.py)
+[Click here to see the solution](https://github.com/sudeff/Leetcode-practices/blob/main/Climbing-Stairs/solution))
 
 LeetCode Link:
 [Climbing Stairs – LeetCode #70](https://leetcode.com/problems/climbing-stairs/)
