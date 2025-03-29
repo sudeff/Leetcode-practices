@@ -4,7 +4,7 @@ Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to
 
 Approach :
 - Recursive
-- Dynamic Programming: Time O(n), Space O(1).
+- Dynamic Programming (Bottom up): Time O(n), Space O(1).
 - Optimized Fibonacci: Since this is basically the nth Fibonacci number.
 
 Python Code:
