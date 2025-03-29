@@ -23,6 +23,7 @@ n is the number of digits in `x`.
 
 Python Code:
 [Click here to see the solution](https://github.com/sudeff/Leetcode-practices/blob/main/Climbing-Stairs/solution)
+
 LeetCode Link:
 [Climbing Stairs – LeetCode #70](https://leetcode.com/problems/palindrome-number/)
 
