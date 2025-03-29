@@ -3,12 +3,12 @@ This repo contains my step by step solutions to problems from [LeetCode](https:/
 
 Each folder in this repo corresponds to a single LeetCode problem, and includes:
 
-##-Organized documentation with `README.md` files for each exercise; 
+-Organized documentation with `README.md` files for each exercise; 
 
-##Description of the problem,
+Description of the problem,
 
-##Problem solving approaches,
+Problem solving approaches,
 
-##Time and space complexity analysis;
+Time and space complexity analysis
 
-##-Clean and readable code.  
+-Clean and readable code
