@@ -1,0 +1,30 @@
+from typing import List
+
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return [] #if input is empty return empty list
+
+        letters_map = {
+            "2": "abc", "3": "def", "4": "ghi", "5": "jkl",
+            "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
+        }
+
+        result_list = []
+
+        def backtrack(index: int, path: str): #path for representing the letter combination created so far
+            if index == len(digits):
+                result_list.append(path)
+                return
+            
+            letters = letters_map[digits[index]] #letters is a string there 
+            for letter in letters:
+                backtrack(index + 1, path + letter) #we continue by adding the next letter to the path 
+
+        backtrack(0, "")
+        return result_list
+
+solution= Solution()
+print(solution.letterCombinations("23"))
+
+
