@@ -27,6 +27,7 @@ After each recursive call, backtrack applied: unmark the used element to explore
 
 Time & Space Complexity:
 Time	O(n × n!) — n! permutations generated and each takes O(n) to build
+
 Space	O(n) for recursion stack + O(n) for used list per call
 
 Python Code:
