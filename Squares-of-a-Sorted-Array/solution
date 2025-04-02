@@ -1,0 +1,12 @@
+from typing import List
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        square_list=[]
+        for i in nums:
+            square_list.append(i**2)
+        
+        square_list.sort()
+        return square_list
+    
+solution=Solution()
+print(solution.sortedSquares([-4,-1,0,3,10]))
