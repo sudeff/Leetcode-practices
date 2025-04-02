@@ -5,6 +5,7 @@ Problem Description:
 Given an array `nums` of distinct integers, return **all the possible permutations**. You can return the answer in any order.
 
 Example:
+
 Input: nums = [1, 2, 3]
 Output:
 [
@@ -17,6 +18,7 @@ Output:
 ]
 
 Approach:
+
 Each permutation build step by step using a recursive backtrack function.
 
 A used list keeps track of which elements have already been added to the current path.
