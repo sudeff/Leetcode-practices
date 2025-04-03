@@ -1,0 +1,29 @@
+from typing import List
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+
+        position_var = 1 #This variable keeps track of where the next unique element should be written in the list.
+
+        # Start from the second element and compare with the previous one
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i - 1]:
+                nums[position_var] = nums[i]
+                position_var += 1
+
+        return position_var  # Length of the array with unique elements
+        
+
+solution = Solution()
+nums = [0,0,1,1,1,2,2,3,3,4]
+k = solution.removeDuplicates(nums)
+print("k =", k)
+print("Modified nums (first k elements are unique):", nums[:k])
+
+formatted_output = [str(x) if i < k else "_" for i, x in enumerate(nums)] #to iterate with both the index i and the value x
+print("The output is :", visual)
+
+
+

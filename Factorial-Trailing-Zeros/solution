@@ -1,0 +1,27 @@
+class Solution:
+    def trailingZeroes(self, n: int) -> int:
+        factorial=1
+        for i in range(2, n+1):
+            factorial=factorial*i
+        
+        factorial_str = str(factorial)[::-1] 
+
+        trailing_zero =0
+        for k in factorial_str:
+            if k != 0:
+                break
+            else:
+                trailing_zero += 1
+        
+        return factorial, trailing_zero
+    
+
+solution= Solution()
+print(solution.trailingZeroes(5))
+        
+
+       
+    
+
+
+        
