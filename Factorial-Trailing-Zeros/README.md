@@ -1,2 +1,2 @@
 LeetCode Link:
-[Fibonacci-number – LeetCode #509](https://leetcode.com/problems/fibonacci-number/)
+[Factorial-Trailing-Zero – LeetCode #172](https://leetcode.com/problems/factorial-trailing-zeroes/description/)
