@@ -1,0 +1,17 @@
+class Solution:
+    def addDigits(self, num: int) -> int:
+        sum=0
+        num_str=str(num)
+        for i in (str(num)):
+            sum += int(i)
+            if len(str(sum))==1:
+                return sum
+            else: 
+                continue
+
+solution=Solution()
+print(solution.addDigits(233))
+
+
+            
+        
