@@ -1,4 +1,4 @@
-[Fibonacci-number – LeetCode #509](https://leetcode.com/problems/majority-element/description/)
+[Majority-Element – LeetCode #169](https://leetcode.com/problems/majority-element/description/)
 
 
 For this exercise 2 approaches are used. In the first one, each element in the list is compared with the other elements and if that element is more than half the length of the list, it is returned. Since the if loop is used twice in this approach, the time complexity is O(n^2).
