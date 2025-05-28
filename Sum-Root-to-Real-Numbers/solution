@@ -1,0 +1,33 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def sumNumbers(self, root) -> int:
+        self.total = 0
+
+        def dfs(node, current_sum): #helper function
+            if node is None: #when path ends, we stop then
+                return
+            current_sum = current_sum * 10 + node.val
+
+            if not node.left and not node.right:
+                self.total += current_sum
+                return
+
+            dfs(node.left, current_sum)
+            dfs(node.right, current_sum)
+
+        dfs(root, 0)
+        return self.total
+
+
+root=TreeNode(1)
+root.right=TreeNode(5)
+root.left=TreeNode(7)
+root.right.right=TreeNode(2)
+root.right.left=TreeNode(9)
+solution= Solution()
+print(solution.sumNumbers(root))

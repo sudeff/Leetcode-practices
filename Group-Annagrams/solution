@@ -1,0 +1,21 @@
+from typing import List
+
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        for i in range(len(nums)):
+            anagram_tuple=tuple()
+            for j in range(len(nums)):
+                if i != j:
+                    set_i=set(nums[i])
+                    set_j=set(nums[j])
+                    if set_i==set_j:
+                        anagram_tuple = anagram_tuple + tuple(nums[i]) + tuple(nums[j])
+                        return anagram_tuple
+                    
+        else:
+            return (" ")
+        
+solution=Solution()
+print(solution.findDisappearedNumbers(["eat","tea","tan","ate","nat","bat"]))
+                    
+

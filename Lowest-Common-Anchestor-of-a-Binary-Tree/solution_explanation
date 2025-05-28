@@ -1,0 +1,9 @@
+My idea was for p and q subsequently, add the ancestors in a different list.
+Then find the first common element of lists.
+
+Also we apply it by using subtrees
+
+For example, the LCA of p and q will be the same as the LCA of the ancestor of p and q.
+
+Or we can start from the root and go right and left, find the anchors of the two and try to go down as far as we can
+

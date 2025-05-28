@@ -1,0 +1,2 @@
+Starting from the root node,
+I can subtract the value of each node from my target and go to the right or left and return a new tree.
