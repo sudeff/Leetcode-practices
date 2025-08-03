@@ -1,0 +1,40 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def getMinimumDifference(self, root) -> int:
+        self.previous = None
+        self.min_difference= float('inf')
+        
+        def in_order(node):
+            if not node:
+                return 
+            
+            in_order(node.left) #tree-treversal
+
+            if self.previous is not None:
+                self.min_difference = abs(min(self.min_difference, node.val - self.previous))
+                
+
+            self.previous = node.val
+
+            in_order(node.right)
+
+        in_order(root)
+
+        return self.min_difference
+
+
+root = TreeNode(4)
+root.left = TreeNode(2)
+root.right = TreeNode(6)
+root.left.left = TreeNode(1)
+root.left.right = TreeNode(3)
+solution= Solution()
+print(solution.getMinimumDifference(root))
+
+            
+

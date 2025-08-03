@@ -1,0 +1,13 @@
+class Solution(object):
+    def intersect(self, nums1, nums2):
+        intersection_list=[]
+        for i in nums1:
+            if i in nums2:
+                intersection_list.append(i)
+
+        return intersection_list
+    
+solution = Solution()
+print(solution.intersect([1,2,5,3],[2,8,1,9]))
+
+
